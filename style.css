@@ -1,40 +1,90 @@
-/* --- Steuerungselemente oben --- */
-.top-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto 20px auto;
+:root {
+    --bg-color: #f4f7f6;
+    --text-color: #333;
+    --container-bg: #fff;
+    --accent-color: #005f73;
+    --border-color: #ddd;
 }
 
-.lang-switcher button {
-    background-color: var(--container-bg);
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --container-bg: #1e1e1e;
+    --accent-color: #94d2bd;
+    --border-color: #444;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-color);
     color: var(--text-color);
-    border: 1px solid var(--border-color);
-    padding: 8px 12px;
-    margin-left: 5px;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--container-bg);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    color: var(--accent-color);
+}
+
+h2 {
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.job p {
+    margin: 5px 0;
+}
+
+#theme-toggle {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    transition: all 0.3s;
 }
 
-.lang-switcher button:hover {
-    background-color: var(--accent-color);
-    color: #fff;
-}
-
-/* --- RTL (Right-to-Left) Unterstützung für Arabisch --- */
-html[dir="rtl"] {
-    text-align: right;
-}
-
-html[dir="rtl"] ul {
-    padding-right: 20px;
-    padding-left: 0;
-}
-
-html[dir="rtl"] .lang-switcher button {
-    margin-left: 0;
-    margin-right: 5px;
+#theme-toggle:hover {
+    opacity: 0.9;
 }
