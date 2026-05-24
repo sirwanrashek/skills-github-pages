@@ -7,43 +7,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="top-controls">
-        <button id="theme-toggle" data-i18n="btn_darkmode">Dark Mode aktivieren</button>
-        <div class="lang-switcher">
-            <button onclick="changeLanguage('de')">🇩🇪 DE</button>
-            <button onclick="changeLanguage('en')">🇬🇧 EN</button>
-            <button onclick="changeLanguage('ar')">🇸🇾 AR</button>
-        </div>
-    </div>
+    <button id="theme-toggle">Dark Mode aktivieren</button>
 
     <div class="container">
         <header>
             <h1>Sirwan Rashek</h1>
-            <p data-i18n="contact_info">Kufsteiner Strasse 17, 45899 Gelsenkirchen | Tel: 015739383139 | E-Mail: Sirwanrashek@hotmail.com</p>
+            <p>Kufsteiner Strasse 17, 45899 Gelsenkirchen | Tel: 015739383139 | E-Mail: Sirwanrashek@hotmail.com</p>
         </header>
 
         <section>
-            <h2 data-i18n="header_academic">Akademischer Werdegang</h2>
-            <p><strong data-i18n="study_title">Studium der Informatik (B.Sc.)</strong><br>
-            <span data-i18n="study_desc">Westfälische Hochschule Gelsenkirchen, aktuell im 6. Fachsemester.</span></p>
+            <h2>Akademischer Werdegang</h2>
+            <p><strong>Studium der Informatik (B.Sc.)</strong><br>
+            Westfälische Hochschule Gelsenkirchen, aktuell im 6. Fachsemester.</p>
         </section>
 
         <section>
-            <h2 data-i18n="header_skills">IT-Kenntnisse & Kompetenzen</h2>
+            <h2>IT-Kenntnisse & Kompetenzen</h2>
             <ul>
-                <li data-i18n="skill_software"><strong>Softwaretechnik:</strong> Tiefgehendes Verständnis des gesamten Software-Lebenszyklus...</li>
-                <li data-i18n="skill_web"><strong>Webentwicklung:</strong> Konzeption und Realisierung von Webseiten mittels HTML und CSS.</li>
-                </ul>
+                <li><strong>Programmierung:</strong> Sicherer Umgang mit Java und Python.</li>
+                <li><strong>Webentwicklung:</strong> Konzeption und Realisierung von Webseiten mittels HTML und CSS.</li>
+                <li><strong>Datenbanken:</strong> Fundierte Kenntnisse in SQL und relationalen Datenbankmanagementsystemen.</li>
+                <li><strong>Systemadministration:</strong> Ausführliches Wissen und praktische Fertigkeiten im Bereich der Betriebssysteme.</li>
+            </ul>
         </section>
 
         <section>
-            <h2 data-i18n="header_experience">Berufserfahrung</h2>
+            <h2>Berufserfahrung</h2>
             <div class="job">
-                <h3 data-i18n="job_pta_title">Pharmazeutisch-technischer Assistent (PTA)</h3>
-                <p><em data-i18n="job_pta_date">Alte Apotheke, Gelsenkirchen | 01.11.2022 - 01.09.2025</em></p>
-                <p data-i18n="job_pta_desc">Abgabe von Arzneimitteln auf Rezept, Verkauf von OTC-Präparaten, Herstellung von Arzneimitteln gemäß GMP-Richtlinien, Kundenberatung, Apothekenverwaltung.</p>
+                <h3>Pharmazeutisch-technischer Assistent (PTA)</h3>
+                <p><em>Alte Apotheke, Gelsenkirchen | 01.11.2022 - 01.09.2025</em></p>
+                <p>Abgabe von Arzneimitteln auf Rezept, Verkauf von OTC-Präparaten, Herstellung von Arzneimitteln gemäß GMP-Richtlinien, Kundenberatung, Apothekenverwaltung.</p>
             </div>
-            </section>
+            <div class="job">
+                <h3>Praktikum (Pharmazie)</h3>
+                <p><em>Alte Apotheke, Gelsenkirchen | 01.07.2022 - 01.09.2022</em></p>
+            </div>
+            <div class="job">
+                <h3>Pharmazeutisch-technischer Assistent</h3>
+                <p><em>Apotheke Jacob Ibrahim, Al Hasaka | 08.2016 - 09.2018</em></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Weitere Ausbildungen</h2>
+            <ul>
+                <li>Qualifizierungsmaßnahme für PTA, Völker-Schule in Osnabrück und Vorbereitungskurs auf die Eignungs- bzw. Kenntnisprüfung für PTA</li>
+                <li>Technisches Diplom, Fachrichtung Pharmazie, Technisches Fachinstitut für Gesundheitswesen, Al Hasaka (Bewertung: "ausgezeichnet")</li>
+                <li>Abitur (mathematisch-naturwissenschaftlich), Oberschule Al Hasaka</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Fachliche Kenntnisse & Stärken</h2>
+            <ul>
+                <li><strong>Pharmazie:</strong> Bearbeitung ärztlicher Verschreibungen, Informationsbeschaffung, Patientenberatung, Prüfung von Ausgangsstoffen und Fertigarzneimitteln, Dokumentationsaufgaben.</li>
+                <li><strong>Sprachen:</strong> Arabisch und Kurdisch (Muttersprache), Deutsch (Wort und Schrift), Englisch B1.</li>
+                <li><strong>Soft Skills:</strong> Kommunikationsfähigkeit, Eigeninitiative, Belastbarkeit, schnelle Auffassungsgabe, strukturierte Arbeitsweise, Selbständigkeit, gutes Organisationsvermögen, Diskretion und Loyalität.</li>
+            </ul>
+        </section>
     </div>
 
     <script src="script.js"></script>
