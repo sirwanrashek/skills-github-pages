@@ -12,7 +12,7 @@
     <div class="container">
         <header>
             <h1>Sirwan Rashek</h1>
-            <p>Kufsteiner Strasse 17, 45899 Gelsenkirchen | Tel: 015739383139 | E-Mail: Sirwanrashek@hotmail.com</p>
+            <p>Kufsteiner Strasse 17, 45899 Gelsenkirchen | Tel:  | E-Mail: </p>
         </header>
 
         <section>
